@@ -25,7 +25,7 @@ ClientCode = "023040000001"
 # 인증토큰 IP제한기능 사용여부, True-사용, False-미사용, 기본값(True)
 IPRestrictOnOff = True
 
-# 팝빌 API 서비스 고정 IP 사용여부, True-사용, False-미사용, 기본값(False)
+# 카카오써트 API 서비스 고정 IP 사용여부, True-사용, False-미사용, 기본값(False)
 UseStaticIP = False
 
 # 로컬시스템 시간 사용여부, True-사용, False-미사용, 기본값(True)
