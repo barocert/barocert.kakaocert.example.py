@@ -36,9 +36,9 @@ for x in range(0,5):
     )    
 
 multiSign = KakaoMultiSign(        
-    receiverHP = kakaocertService._encrypt('01067668440'),
-    receiverName = kakaocertService._encrypt('정우석'),
-    receiverBirthday = kakaocertService._encrypt('19900911'),
+    receiverHP = kakaocertService._encrypt('01012341234'),
+    receiverName = kakaocertService._encrypt('홍길동'),
+    receiverBirthday = kakaocertService._encrypt('19700101'),
     reqTitle = '인증요청 메시지 제목란',
     expireIn = 1000,
     tokens = multiSignTokens,

@@ -27,9 +27,9 @@ https://developers.barocert.com/reference/kakao/python/sign/api-single#RequestSi
 clientCode = settings.ClientCode
 
 sign = KakaoSign(        
-    receiverHP = kakaocertService._encrypt('01067668440'),
-    receiverName = kakaocertService._encrypt('정우석'),
-    receiverBirthday = kakaocertService._encrypt('19900911'),
+    receiverHP = kakaocertService._encrypt('01012341234'),
+    receiverName = kakaocertService._encrypt('홍길동'),
+    receiverBirthday = kakaocertService._encrypt('19700101'),
     reqTitle = '인증요청 메시지 제목란',
     expireIn = 1000,
     token = kakaocertService._encrypt('전자서명단건테스트데이터'),
