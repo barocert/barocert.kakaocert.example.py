@@ -16,7 +16,6 @@ from barocert import *
 kakaocertService = KakaocertService(settings.LinkID, settings.SecretKey)
 kakaocertService.IPRestrictOnOff = settings.IPRestrictOnOff
 kakaocertService.UseStaticIP = settings.UseStaticIP
-kakaocertService.UseLocalTimeYN = settings.UseLocalTimeYN
 
 """
 완료된 전자서명을 검증하고 전자서명 데이터 전문(signedData)을 반환 받습니다.
