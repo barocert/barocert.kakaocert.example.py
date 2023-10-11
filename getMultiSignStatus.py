@@ -16,7 +16,6 @@ from barocert import *
 kakaocertService = KakaocertService(settings.LinkID, settings.SecretKey)
 kakaocertService.IPRestrictOnOff = settings.IPRestrictOnOff
 kakaocertService.UseStaticIP = settings.UseStaticIP
-kakaocertService.UseLocalTimeYN = settings.UseLocalTimeYN
 
 """
 전자서명(복수) 요청 후 반환받은 접수아이디로 인증 진행 상태를 확인합니다.

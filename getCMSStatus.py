@@ -16,7 +16,6 @@ from barocert import *
 kakaocertService = KakaocertService(settings.LinkID, settings.SecretKey)
 kakaocertService.IPRestrictOnOff = settings.IPRestrictOnOff
 kakaocertService.UseStaticIP = settings.UseStaticIP
-kakaocertService.UseLocalTimeYN = settings.UseLocalTimeYN
 
 """
 카카오톡 이용자에게 자동이체 출금동의를 요청합니다.
