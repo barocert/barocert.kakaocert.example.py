@@ -29,9 +29,9 @@ identity = KakaoIdentity(
     receiverHP = kakaocertService._encrypt('01012341234'),
     receiverName = kakaocertService._encrypt('홍길동'),
     receiverBirthday = kakaocertService._encrypt('19700101'),
-    reqTitle = '인증요청 메시지 제목란',
+    reqTitle = '본인인증 요청 메시지 제목',
     expireIn = 1000,
-    token = kakaocertService._encrypt('본인인증요청토큰'),
+    token = kakaocertService._encrypt('본인인증 요청 원문'),
     appUseYN = False,
     returnURL = 'https://kakao.barocert.com',
 )

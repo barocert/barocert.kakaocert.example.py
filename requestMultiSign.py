@@ -29,8 +29,8 @@ multiSignTokens = []
 for x in range(0,5):
     multiSignTokens.append(
         KakaoMultiSignTokens(
-            reqTitle = "전자서명복수테스트",
-            token = kakaocertService._encrypt("전자서명복수테스트데이터" + str(x)) 
+            reqTitle = "전자서명(복수) 요청 메시지 제목" + str(x),
+            token = kakaocertService._encrypt("전자서명(복수) 요청 메시지" + str(x)) 
         )
     )    
 
@@ -38,7 +38,7 @@ multiSign = KakaoMultiSign(
     receiverHP = kakaocertService._encrypt('01012341234'),
     receiverName = kakaocertService._encrypt('홍길동'),
     receiverBirthday = kakaocertService._encrypt('19700101'),
-    reqTitle = '인증요청 메시지 제목란',
+    reqTitle = '전자서명(복수) 요청 메시지 제목',
     expireIn = 1000,
     tokens = multiSignTokens,
     tokenType = 'TEXT',
