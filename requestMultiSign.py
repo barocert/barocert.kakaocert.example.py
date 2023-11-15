@@ -43,7 +43,7 @@ multiSign = KakaoMultiSign(
     tokens = multiSignTokens,
     tokenType = 'TEXT',
     appUseYN = False,
-    returnURL = 'https://kakao.barocert.com'
+    # returnURL = 'https://kakao.barocert.com'
 )
 
 try :

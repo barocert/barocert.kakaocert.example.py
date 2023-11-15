@@ -34,7 +34,7 @@ sign = KakaoSign(
     token = kakaocertService._encrypt('전자서명(단건) 요청 원문'),
     tokenType = 'TEXT',
     appUseYN = False,
-    returnURL = 'https://kakao.barocert.com'
+    # returnURL = 'https://kakao.barocert.com'
 )
 
 try :

@@ -38,7 +38,7 @@ cms = KakaoCMS(
     bankAccountBirthday = kakaocertService._encrypt("19700101"),
     bankServiceType = kakaocertService._encrypt("CMS"),
     appUseYN = False,
-    returnURL = 'https://kakao.barocert.com'
+    # returnURL = 'https://kakao.barocert.com'
 )
 
 try :

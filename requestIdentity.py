@@ -33,7 +33,7 @@ identity = KakaoIdentity(
     expireIn = 1000,
     token = kakaocertService._encrypt('본인인증 요청 원문'),
     appUseYN = False,
-    returnURL = 'https://kakao.barocert.com',
+    # returnURL = 'https://kakao.barocert.com',
 )
 
 try:
