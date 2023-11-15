@@ -44,6 +44,7 @@ cms = KakaoCMS(
 try :
     obj = kakaocertService.requestCMS(clientCode, cms)
     print(obj.receiptID)
+    print(obj.scheme)
 except BarocertException as BE :
     print(BE.code)
     print(BE.message)

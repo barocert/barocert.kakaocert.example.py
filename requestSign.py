@@ -31,7 +31,7 @@ sign = KakaoSign(
     receiverBirthday = kakaocertService._encrypt('19700101'),
     reqTitle = '전자서명(단건) 요청 메시지 제목',
     expireIn = 1000,
-    token = kakaocertService._encrypt('전자서명(단건) 요청 메시지'),
+    token = kakaocertService._encrypt('전자서명(단건) 요청 원문'),
     tokenType = 'TEXT',
     appUseYN = False,
     returnURL = 'https://kakao.barocert.com'
@@ -40,6 +40,7 @@ sign = KakaoSign(
 try :
     obj = kakaocertService.requestSign(clientCode, sign)
     print(obj.receiptID)
+    print(obj.scheme)
 except BarocertException as BE :
     print(BE.code)
     print(BE.message)

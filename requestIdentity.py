@@ -39,6 +39,7 @@ identity = KakaoIdentity(
 try:
     obj = kakaocertService.requestIdentity(clientCode, identity)
     print(obj.receiptID)
+    print(obj.scheme)
 except BarocertException as BE :
     print(BE.code)
     print(BE.message)

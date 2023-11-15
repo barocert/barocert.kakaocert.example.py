@@ -30,7 +30,7 @@ for x in range(0,5):
     multiSignTokens.append(
         KakaoMultiSignTokens(
             reqTitle = "전자서명(복수) 요청 메시지 제목" + str(x),
-            token = kakaocertService._encrypt("전자서명(복수) 요청 메시지" + str(x)) 
+            token = kakaocertService._encrypt("전자서명(복수) 요청 원문" + str(x)) 
         )
     )    
 
@@ -49,6 +49,7 @@ multiSign = KakaoMultiSign(
 try :
     obj = kakaocertService.requestMultiSign(clientCode, multiSign)
     print(obj.receiptID)
+    print(obj.scheme)
 except BarocertException as BE :
     print(BE.code)
     print(BE.message)
