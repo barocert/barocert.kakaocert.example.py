@@ -30,6 +30,7 @@ cms = KakaoCMS(
     receiverName = kakaocertService._encrypt('홍길동'),
     receiverBirthday = kakaocertService._encrypt('19700101'),
     reqTitle = '출금동의 요청 메시지 제목',
+    extraMessage = kakaocertService._encrypt('출금동의 커스텀 메시지'),
     expireIn = 1000,
     requestCorp = kakaocertService._encrypt("링크허브"),
     bankName = kakaocertService._encrypt("국민은행"),

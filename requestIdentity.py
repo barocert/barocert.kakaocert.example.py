@@ -30,6 +30,7 @@ identity = KakaoIdentity(
     receiverName = kakaocertService._encrypt('홍길동'),
     receiverBirthday = kakaocertService._encrypt('19700101'),
     reqTitle = '본인인증 요청 메시지 제목',
+    extraMessage = kakaocertService._encrypt('본인인증 커스텀 메시지'),
     expireIn = 1000,
     token = kakaocertService._encrypt('본인인증 요청 원문'),
     appUseYN = False,
