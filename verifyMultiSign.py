@@ -34,6 +34,10 @@ try :
     for multiSignedData in obj.multiSignedData:
         print(multiSignedData)
     print(obj.ci)
+    print(obj.receiverName)
+    print(obj.receiverYear)
+    print(obj.receiverDay)
+    print(obj.receiverHP)
 except BarocertException as BE :
     print(BE.code)
     print(BE.message)
