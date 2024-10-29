@@ -38,6 +38,7 @@ try :
     print(obj.receiverYear)
     print(obj.receiverDay)
     print(obj.receiverHP)
+    print(obj.receiverGender)
 except BarocertException as BE :
     print(BE.code)
     print(BE.message)
